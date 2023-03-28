@@ -1,0 +1,381 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #3f63ad;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #000;
+}
+
+body {
+  background-color: #cadfff;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.warning {
+  color: orange;
+}
+
+.danger {
+  color: red;
+}
+
+.dog-card-container {
+  display: flex;
+  grid-gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.dog-card {
+  width: 30%;
+  background: #f7f7f8;
+  border-radius: 16px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.dog-card p.temperament {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.dog-card img {
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.dog-card p.temperament {
+  font-size: 12px;
+  font-weight: 300;
+  color: #676767;
+  padding: 0 1rem;
+  letter-spacing: 0.5px;
+}
+
+.dog-card p.weight {
+  font-size: 15px;
+  font-weight: 300;
+  color: #676767;
+  padding: 0 1rem;
+}
+
+.dog-card h5 {
+  font-size: 15px;
+  padding-bottom: 0.5rem;
+}
+
+.dog-card h6 {
+  padding: 1rem 0 0 0;
+  font-size: 14px;
+}
+
+.dog-card h3 {
+  font-size: 21px;
+  font-weight: 600;
+  padding: 1rem 1rem;
+}
+
+button {
+  margin-top: 1rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 13px;
+  font-weight: 500;
+  background-color: lightseagreen;
+  padding: 14px 20px;
+  border-radius: 100px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: all 0.3s ease;
+  background-color: rgb(26, 110, 106);
+}
+
+.nav-bar {
+  padding: 2rem 0 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar img {
+  width: 200px;
+}
+
+.nav-bar ul li {
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline;
+  padding: 0 1rem;
+}
+
+.nav-bar ul li a {
+  color: #3f63ad;
+  text-decoration: none;
+}
+
+.nav-bar ul li a:hover {
+  transition: all 0.3s ease;
+  color: #2965dd;
+}
+
+.dog-detail {
+  display: flex;
+  background-color: #fff;
+  border-radius: 16px;
+  align-items: center;
+}
+
+.dog-detail .image-container {
+  width: 35%;
+	height: 457px;
+  max-height: 100%;
+}
+
+.dog-detail .image-container img {
+  border-radius: 16px 0 0 16px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.dog-detail .element-container {
+  width: 55%;
+}
+
+.inner-elements {
+  padding: 2rem;
+}
+.inner-elements h3 {
+  padding-bottom: 1rem;
+}
+.inner-elements p {
+  margin-bottom: 1rem;
+}
+
+.home-view {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.home-view .sidebar {
+  width: 25%;
+  background: #fff;
+  border-radius: 32px;
+}
+
+.home-view .content {
+  width: 75%;
+}
+
+.home-view .sidebar {
+  padding: 2rem;
+}
+
+.home-view .sidebar {
+  padding: 2rem;
+}
+
+.home-view .sidebar h1 {
+  padding-bottom: 0rem;
+}
+
+hr {
+  border: 0.5px solid #cadfff;
+}
+
+.sidebar .form-div {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.sidebar .form-div .div-input {
+  width: 60%;
+  padding-right: 0.5rem;
+}
+
+.sidebar .form-div .div-input input {
+  width: 100%;
+  border: none;
+  background: #cadfff;
+  padding: 16px 16px;
+  border-radius: 100px;
+}
+
+input {
+  width: 100%;
+  border: none;
+  background: #cadfff;
+  padding: 16px 16px;
+  border-radius: 100px;
+  margin: 16px 0;
+}
+
+.form-container select {
+  height: 40px;
+  border-radius: 8px;
+  padding: 6px;
+  width: 90%;
+}
+.sidebar .form-div .btn-search {
+  width: 40%;
+}
+
+.sidebar .form-div .btn-search button {
+  margin-top: 0;
+}
+
+.sidebar h5 {
+  margin-top: 1.5rem;
+}
+
+.cont-temp {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.cont-temp .filter-temp {
+  width: 60%;
+}
+
+.cont-temp .filter-temp select {
+  height: 40px;
+  border-radius: 8px;
+  padding: 6px;
+  width: 90%;
+}
+
+.cont-temp .btn-filter-temp {
+  width: 40%;
+}
+
+.cont-temp .btn-filter-temp button {
+  margin-top: 0;
+}
+
+.btn-reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 32px;
+  background: #fff;
+}
+
+.form-container h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.form-container .btn-temps {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-container .btn-temps button {
+  margin: 0;
+}
+
+.form-container .min-max {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer {
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  padding: 3rem 0;
+}
+
+.landing-view {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://paradepets.com/.image/t_share/MTkxMzY1Nzg4NjczMzIwNTQ2/cutest-dog-breeds-jpg.jpg");
+  background-size: cover;
+}
+
+.landing-view .landing-container {
+  max-width: 600px;
+  text-align: center;
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 32px;
+}
+
+.landing-view .overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: #cadfffc4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-view .landing-container p {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.landing-view .landing-container img {
+  width: 250px;
+}
+
+.btn-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 2rem;
+}
